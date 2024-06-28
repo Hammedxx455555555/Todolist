@@ -21,8 +21,9 @@ import './Todo.css'
         }
 
          const handleDeleteTodo = (index) => {
-            const near = todos.filter((item)=>item.id !== item);
-           setTodos(near);
+            const near = todos.find((item)=>item.id == item);
+            const dat = near -1
+           setTodos(dat);
          };
 
      return (
